@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Reckoner;
+    src: './fonts/Reckoner.ttf';
+}
+
+@font-face {
+    font-family: Raleway;
+    src: './fonts/Raleway.ttf';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#main-container {
+    width: 30%;
+    height: auto;
+    padding: 0;
+    margin: auto;
+    margin-top: 10%;
+}
+
+h1.big-header {
+    font-family: 'Reckoner';
+    font-size: 92px;
+    margin: 0;
+}
+
+.stylized-btn {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s;
+}
+
+.stylized-btn span {
+    font-family: 'Raleway';
+}
+
+.stylized-lnk {
+    color: inherit;
+    text-decoration: none;
+}
+
+.upper-line {
+    width: 200px;
+    height: 2;
+    fill: white;
+    stroke: red;
+    stroke-width: 1;
+    transition: width 1s;
+}
+
+.bottom-line {
+    width: 0px;
+    height: 2;
+    fill: white;
+    stroke: red;
+    stroke-width: 1;
+    transition: width 1s;
+}
+
+.btn-container:hover .upper-line {
+    width: 0px
+}
+
+.btn-container:hover .bottom-line {
+    width: 200px
+}
+
+.btn-container:hover .stylized-btn {
+    background-color: rgba(100,100,200,0.2);
+}
