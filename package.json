@@ -1,0 +1,23 @@
+{
+  "name": "arcands",
+  "version": "1.0.0",
+  "description": "A little game with 9 orbs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loowood/arcands.git"
+  },
+  "author": "Loris GRD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Loowood/arcands/issues"
+  },
+  "homepage": "https://github.com/Loowood/arcands#readme",
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
+}
