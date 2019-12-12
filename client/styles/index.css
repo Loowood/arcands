@@ -14,7 +14,12 @@ html, body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
+
+canvas { position:fixed; top:0; left:0; z-index:1; }
+#contenu { position:relative; z-index:2; }
 
 #main-container {
     width: 30%;
@@ -41,6 +46,7 @@ h1.big-header {
 
 .stylized-btn span {
     font-family: 'Raleway';
+    color: #FFFFFF;
 }
 
 .stylized-lnk {
@@ -64,6 +70,10 @@ h1.big-header {
     stroke: red;
     stroke-width: 1;
     transition: width 1s;
+}
+
+.btn-container {
+    width: 200px;
 }
 
 .btn-container:hover .upper-line {
