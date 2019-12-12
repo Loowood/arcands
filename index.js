@@ -1,8 +1,16 @@
-const Koa = require('koa');
-const app = new Koa();
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+const path = require('path');
 
-const root = './client';
-const opts = {};
-app.use( require('koa-static')(root, opts) );
+app.use(express.static(path.join(__dirname, 'client')));
 
-app.listen(3000);
+app.get('/', (req, res, next) => {
+    res.sendFile(path.join(__dirname, 'client/index.html'));
+})
+
+app.get('/arcands', (req, res, next) => {
+    res.sendFile(path.join(__dirname, 'client/arcands-game.html'));
+});
+
+app.listen(port);
