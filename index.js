@@ -9,8 +9,8 @@ app.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'client/index.html'));
 })
 
-app.get('/arcands', (req, res, next) => {
-    res.sendFile(path.join(__dirname, 'client/arcands-game.html'));
+app.get('/game', (req, res, next) => {
+    res.sendFile(path.join(__dirname, 'client/game.html'));
 });
 
 app.listen(port);

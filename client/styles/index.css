@@ -74,6 +74,7 @@ h1.big-header {
 
 .btn-container {
     width: 200px;
+    margin-bottom: 50px;
 }
 
 .btn-container:hover .upper-line {
