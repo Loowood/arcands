@@ -19,7 +19,7 @@ html, body {
 }
 
 canvas { position:fixed; top:0; left:0; z-index:1; }
-#contenu { position:relative; z-index:2; }
+#content { position:relative; z-index:2; }
 
 #main-container {
     width: 30%;
