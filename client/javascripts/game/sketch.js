@@ -3,7 +3,7 @@ let can1;
 let dos;
 function preload() {
 	can1 = loadImage('../../assets/images/Canard 1.png');
-	dos = loadImage('../../assets/images/DosBleu.png');
+	dos = loadImage('../../assets/images/Dos.png');
 }
 
 function setup(){
