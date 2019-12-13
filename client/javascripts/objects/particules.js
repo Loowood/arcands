@@ -20,13 +20,10 @@ class Particle {
         this.y += this.vector.y;
     }
 
-    validate (xMin, xMax, yMin, yMax) {
+    validate (xMin, xMax) {
         if (this.x > xMax) {
             this.x = xMin + this.x - xMax;
         }
-        // if (this.y > yMax) {
-        //     this.y = yMin + this.y - yMax;
-        // }
     }
 
     display () {
